@@ -10,18 +10,28 @@ body {
 
 main {
   font-family: 'Red Hat Display', sans-serif;
-  color: hsl(223, 47%, 23%);
+
+  /* border-radius: 50%; */
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
 .music_playing {
+  border-radius: 25px 25px 0px 0px;
+  /* margin-bottom: 0px; */
+  /* display: block; */
   background-image: url("./images/illustration-hero.svg");
+  width: 28.125rem;
+  height: 13.75rem;
 }
 
 .info {
+  /* margin-top: 0px; */
   background-color: white;
+  color: hsl(223, 47%, 23%);
+  width: 28.125rem;
+  text-align: center;
 }
 
 .attribution { 
