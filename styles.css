@@ -9,9 +9,7 @@ body {
 }
 
 main {
-  font-family: 'Red Hat Display', sans-serif;
-
-  /* border-radius: 50%; */
+  font-family: "Red Hat Display", sans-serif;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -19,36 +17,93 @@ main {
 
 .music_playing {
   border-radius: 25px 25px 0px 0px;
-  /* margin-bottom: 0px; */
-  /* display: block; */
   background-image: url("./images/illustration-hero.svg");
   width: 28.125rem;
   height: 13.75rem;
 }
 
 .info {
-  /* margin-top: 0px; */
+  padding: 2.5rem 3rem 3rem 3rem;
+  border-radius: 0px 0px 25px 25px;
   background-color: white;
   color: hsl(223, 47%, 23%);
   width: 28.125rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
-.attribution { 
-  font-size: 11px; text-align: center;
+h1 {
+  line-height: 2;
 }
 
-.attribution a { 
-  color: hsl(228, 45%, 44%); 
+.paragraph,
+.annual_plan p,
+.cancel {
+  color: hsl(224, 23%, 55%);
+}
+
+.annual_plan {
+  background-color: hsl(225, 100%, 98%);
+  display: flex;
+  padding: 1rem;
+  text-align: left;
+  margin-top: 1rem;
+  border-radius: 15px;
+}
+
+.annual_plan img {
+  object-position: left center;
+}
+
+.annual_plan h4,
+.annual_plan p {
+  display: block;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.annual_plan a {
+  display: block;
+  text-align: right;
+}
+
+.payment,
+.cancel {
+  padding: 1rem;
+  text-align: center;
+  display: block;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  border: 0;
+  border-radius: 15px;
+}
+
+.payment {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+}
+
+.cancel {
+  background-color: white;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 1025px) {
   body {
     background-image: url("./images/pattern-background-desktop.svg");
     background-repeat: repeat-x;
-
   }
-  
+
   main {
     margin: 10rem;
   }
@@ -56,5 +111,4 @@ main {
   .info {
     margin: 0 10rem;
   }
-
 }
